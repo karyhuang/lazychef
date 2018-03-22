@@ -1,0 +1,452 @@
+body{
+  padding-top: 50px;
+    font-family: 'Poppins';
+}
+main{
+  max-width:1500px;
+  margin:auto;
+}
+.navbar-inverse{
+    background-color: black;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar-brand img{
+    width: 145px;
+	height:51px;
+}
+.navbar-nav{
+    padding-left: 40px;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color:#e53d3d;
+}
+#home-banner{
+	height:85vh;
+	background-image:url(homeBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+#brf-banner{
+	height:85vh;
+	background-image:url(brfBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+#lunch-banner{
+	height:85vh;
+	background-image:url(lunBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#dinner-banner{
+	height:85vh;
+	background-image:url(dinBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+#about-banner{
+    height:85vh;
+	background-image:url(abtBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+#contact-banner{
+    height:85vh;
+	background-image:url(contBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/*HOME PAGE ABOUT*/
+#home-about{
+  padding: 30px 50px 70px;
+  text-align: center;
+  background-color:rgba(229, 61, 61, 0.71);
+  color: white;
+    position: absolute;
+    top: 250px;
+    right: 0px;
+    display: none;
+    
+}
+#spex{
+    background-color: white;
+    color: #e53d3d;
+    box-shadow: 3px 3px 5px rgba(8, 8, 8, 0.47);
+    padding: 15px 40px;
+    position: relative;
+    top: 30px;
+    font-size: 18px;
+    font-weight: 800;
+}
+#spex:hover, #spex:focus, #spex:active{
+	text-decoration:none;
+}
+
+/*HOME PAGE FOOD CONTAINER*/
+#home-lun, #home-din, #home-brf{
+    display: none;
+}
+#category-brf, #category-lun, #category-din{
+    cursor: pointer;
+    padding: 10px 20px;
+}
+#category-brf{
+    background-color: #e53d3d;
+    color: white;
+}
+.fadeInView{
+    opacity: 0;
+}
+.food-container{
+	max-width:1100px;
+	margin:auto;
+    padding-top: 170px;
+    padding-left: 20px;
+    border-left: 3px solid black;
+    padding-bottom: 1px;
+} 
+.food-title{
+    position: absolute;
+    width: 100%;
+	max-width:1500px;
+}
+.food-title h2{
+    padding: 15px 0;
+    border-top: 4px solid black;
+    border-bottom: 3px solid black;
+    margin: 80px 0;
+    padding-left: 20%;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+.brf-row {
+    border: 2px solid white;
+    transition: border 0.2s ease-out;
+}
+.brf-row:hover {
+    border-bottom: 2px solid black;
+    transition: border 0.2s ease-out;
+}
+.brf-img{
+    width: 50%;
+    float: left;
+}
+.desc{
+    width: 50%;
+    float: left;
+}
+.desc div{
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.desc li{
+    padding: 10px;
+    list-style-type: upper-roman;
+    font-family: monospace;
+}
+.brf-img img{
+    width: 100%;
+    height: 350px;
+}
+.nth{
+    clear: both;
+}
+#img-title{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#time{
+    font-style: italic;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+.food-btn{
+    background-color: rgba(240, 96, 39, 0.93);
+    color: white;
+    padding: 30px 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid white;
+    box-shadow: 2px 3px rgba(240, 96, 39, 0.32), -2px -3px rgba(240, 96, 39, 0.32);
+}
+.food-btn:hover{
+    color:white;
+    text-decoration: none;
+    background-color: #ef6027;
+}
+.food-btn:visited, .food-btn:focus{
+    color: white;
+    text-decoration: none;
+}
+.btns{
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    max-width: 450px;
+}
+.din-img{
+    width: 33.333%;
+    float: left;
+}
+.din-img img{
+    width: 100%;
+    height: 260px;
+    padding: 10px;
+    transition: padding 0.3s ease-out;
+}
+.din-img img:hover{
+    padding: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-out;
+}
+#lun-img img{
+    padding: 10px;
+    transition: padding 0.3s ease-out;
+}
+#lun-img img:hover{
+    padding: 20px;
+    transition: padding 0.3s ease-out;
+}
+#dinner{
+    padding-bottom: 80px;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+#copyr{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+#copyr a{
+    background-color: white;
+    color: #e53d3d;
+    box-shadow: 3px 3px 5px #e53d3d;
+    padding: 10px 30px;
+    position: relative;
+    top: 15px;
+    font-size: 24px;
+    font-weight: 800;
+}
+#copyr a:hover,
+#copyr a:focus,
+#copyr a:visited{
+    text-decoration: none;
+}
+#footer-spec{
+    font-size: 22px;
+}
+
+/*BREAKFAST PAGE*/
+#full-desc div{
+	padding-bottom:60px;
+}
+#full-desc{
+	width:100%;
+	float:none;
+}
+#full-desc:hover #time {
+    border-bottom: 2px solid #e53d3d;
+}
+#full-img{
+	width:100%;
+}
+#full-img img{
+	width:100%;
+}
+
+/*CONTACT PAGE*/
+	.comment{
+		margin:0px auto 60px;
+		padding:30px;
+        border:3px solid black;
+        max-width: 800px;
+	}
+.comment h2{
+    text-align: center;
+}
+form{
+    width: 400px;
+    margin: auto;
+}
+	label{
+		display:block;
+		margin-top:20px;
+		margin-bottom:5px;
+	}
+	textarea{
+		display:block;
+		margin-bottom:20px;
+		width:400px;
+		height:160px;
+	}
+	input{
+		width:400px;
+		height:35px;
+	}
+	input[type=checkbox]{
+		width:20px;
+		height:20px;
+	}
+	input[type=submit]{
+        background-color: #ee5f27;
+        color: white;
+        font-size: 20px;
+        height: 50px;
+        border-radius: 6px;
+        border: none;
+	}
+#contact-footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+/*ABOUT PAGE*/
+#big{
+    font-size: 26px;
+    color: #ee5f27;
+}
+#about-desc{
+    font-weight: 600;
+    line-height: 2;
+    font-size: 16px;
+}
+.underline{
+    text-decoration: underline #e53d3d;
+}
+
+/*THANKS PAGE*/
+#thanks{
+    text-align: center;
+}
+#thanks-btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 40px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:1100px){
+    .food-container{
+        max-width: 90%;
+    }
+    #img-title{
+        font-size: 1.5em;
+        line-height: 2;
+    }
+    #copyr{
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width:930px){
+    .desc li{
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width:846px){
+    .desc ol{
+        display: none;
+    }
+	.lunch-desc-row .desc ol{
+		display:block;
+	}
+    .lunch-img-row {
+        display: none;
+    }
+    .brf-img{
+        width: 100%;
+    }
+    .brf-img img{
+        height: auto;
+        padding: 10px;
+    }
+    .desc{
+        width: 100%;
+        text-align: center;
+    }
+    .desc div{
+        padding-bottom: 20px;
+    }
+    .din-img{
+        width: 100%;
+    }
+    .din-img img{
+        height: auto;
+    }
+    .din-img img:hover{
+        padding: 10px;
+        box-shadow: 0px 0px 0px white;
+    }
+    #lun-img img{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .food-title h2 {
+        font-size: 25px;
+    }
+    #category-brf, #category-lun, #category-din {
+        display: block;
+        width: fit-content;
+    }
+    .food-container {
+        padding-top: 280px;
+    }
+    .food-container#ind-food {
+        padding-top: 170px;
+    }
+}
+@media only screen and (max-width:567px){
+    .comment h2{
+        font-size: 24px;
+    }
+    form,input,textarea{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:433px){
+    .desc div{
+        padding: 20px 0;
+    }
+    #img-title{
+        font-size: 16px;
+    }
+    .food-btn{
+        padding: 30px 10px;
+        font-size: 22px;
+    }
+    .brf-img img{
+        height: 225px;
+    }
+    .din-img img{
+        height: 225px;
+        padding: 0;
+    }
+    .din-img img:hover{
+        box-shadow:none;
+}

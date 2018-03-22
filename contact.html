@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lazy Chef 30-min Recipes</title>
+
+      <!-- Favicon -->
+    <link rel="icon" href="lazychef.ico" type="image/x-icon">
+      
+      <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="lazychef.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+              <img src="logo.png">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="breakfast.html"><b>BREAKFAST</b></a></li>
+            <li><a href="lunch.html"><b>LUNCH</b></a></li>
+            <li><a href="dinner.html"><b>DINNER</b></a></li>
+            <li><a href="about.html"><b>ABOUT</b></a></li>
+            <li class="active"><a href="contact.html"><b>CONTACT</b></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<main>
+        <div id="contact-banner">
+        </div>
+
+        <div id="home-about">
+            <h1>Lazy Chef 30-min Recipes</h1>
+            <p class="lead">Cooking has never been so easy yet tasty.<br><a href="about.html" id="spex">JUST BE LAZY.</a></p>
+        </div>
+        <!-- CONTACT -->
+        <div class="food">
+            <div class="food-title">
+                <h2>CONTACT US</h2>
+            </div>
+        <div class="food-container" id="ind-food"> 
+            <div style="width: 100%"><iframe width="100%" height="400" src="https://www.maps.ie/create-google-map/map.php?width=100%&amp;height=400&amp;hl=en&amp;q=55%20Lexington%20Ave%2C%20New%20York%2C%20NY%2010010+(Lazy%20Chef%20Headquaters)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">www.mapsdirections.info</a></iframe></div><br />   
+            <!---->
+                    <div class="desc" id="full-desc">
+                        <div>
+                            <span id="img-title">Lazy Chef Headquaters</span><br><br>
+                            <span id="time">Ready for you: ALWAYS</span>
+                            <ol>
+                                <li>55 Lexington Ave, New York, NY 10010</li>
+                                <li>Nearby Transit: 6, N, R, W</li>
+                                <li><a href="tel:9999999999">Phone: (999)-999-9999</a></li>
+                                <li><a href="mailto:lazychef@none.com">Email: lazychef@none.com</a></li>
+                            </ol>
+                        </div>
+                    </div>
+            <!---->
+            <div class="comment">
+                <h2>SEND US A MESSAGE:</h2>
+                <form action="thanks.html" method="post" enctype="text/plain">
+                    <label for="myFirstName">*First Name</label>
+                    <input type="text" id="myFirstName" name="myFirstName" placeholder="First Name" pattern="^[a-zA-Z][a-zA-Z\.]{1,20}$" title="use official email account only" required>
+                    <!-- the title shows when you hover over -->
+                    <label for="myLastName">*Last Name</label>
+                    <input type="text" id="myLastName" name="myLastName" placeholder="Last Name" required>
+                    <label for="myEmail">*Email</label>
+                    <input type="email" name="myEmail" id="myEmail" placeholder="Email address" required>
+                    <label for= "text"> Phone: </label>
+                    <input type="tel" placeholder="Format: 000-000-0000" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    <label for="myComments">*Message</label>
+                    <textarea id="myComments" name="myComments" placeholder="Please say anything you want!" ></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div id="contact-footer">
+        <div id="copyr">
+            <!--<p><span id="footer-spec"><b>Got a question about our recipes?</b></span></p>
+            <a href="#">ASK US</a><br><br><br>-->
+            <p id="copyright"><i>Copyright &copy; Kary &amp; Tingying 2017</i></p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
