@@ -1,0 +1,1 @@
+This website provides easy to follow recipes all under 30 minutes, for ones who don't have much time to cook or are simply too lazy. 
